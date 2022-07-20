@@ -81,6 +81,11 @@
   :root {
     --offset: 5vw;
   }
+
+  body>svg {
+    display: none;
+  }
+
 }
 
 html,
@@ -114,7 +119,7 @@ body>* {
 
 
 body>svg {
-  height: clamp(10rem, 90%, 30rem);
+  height: clamp(10rem, 50vh, 30rem);
   margin-left: var(--space-xl);
 }
 

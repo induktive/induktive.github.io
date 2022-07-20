@@ -104,8 +104,7 @@ body {
   align-items: center;
   color: var(--text);
   background: var(--background);
-  padding: var(--space-xl) 0;
-  padding-left: var(--offset);
+  padding: var(--space-xl) var(--offset);
   overflow: hidden;
 }
 
@@ -116,15 +115,18 @@ body>* {
 
 body>svg {
   height: clamp(10rem, 90%, 30rem);
-  transform: translateX(15%);
   margin-left: var(--space-xl);
 }
 
-body>:first-child>* {
+body>div {
+  margin-right: var(--space-xl);
+}
+
+body>div>* {
   margin: var(--space-xl) 0;
 }
 
-body>:first-child>p+p {
+body>div>p+p {
   margin-top: 0;
 }
 

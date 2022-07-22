@@ -210,6 +210,11 @@ button {
   font-weight: var(--weight-bold);
 }
 
+button:hover {
+  cursor: pointer;
+  background: var(--tint-hover);
+}
+
 input::placeholder {
   color: var(--text-muted);
 }
